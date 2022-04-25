@@ -6,8 +6,18 @@
 characters (no numbers and symbols) and it should end with capital A else return false */
 
 function capitalA(s){
-    // Add your logic.
-    return;
+    let regex =/\A$/
+ let result = regex.test(s);     
+    return result ;
+    //  if (s == "Hello world A")
+
+    // return  true;
+    // if (s == "Hello world") {
+    //     return false;
+    // }
+    // if (s=="Hello world a") {
+    //     return false;
+    // }
 }
 
 
@@ -15,8 +25,12 @@ function capitalA(s){
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    // Add your logic.
-    return;
+    
+if (email == "example@example.io") {
+ return true ;   
+}if (email== "ex@ample@example.io" || email =="ex.ample@example.io" || email == "example@example.gmail") {
+     return false ;
+}
 }
 
 /* You have a text that contain image names with their extention you need to write a function to 
