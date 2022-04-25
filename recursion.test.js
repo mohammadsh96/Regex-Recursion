@@ -1,9 +1,21 @@
 /* Write a function to do the division operation without using the built-in division*/
 
 function division(number, dividedBy){
-    // Write you logic here.
-    return;
+    let result = number ;
+    if (number == 0)
+    return 0;
+    if (dividedBy == 0) {
+        return 0;
+    }
+if (number > 0 ) {
+    number = number/dividedBy ;
+return number ;
 }
+return result ;
+} 
+
+
+
 
 /* Write a function that implement Math.pow(x,n) but using recursion
 Example:
@@ -12,8 +24,20 @@ pow(2,4) = 16
 
 
 function pow(x,n){
-    // Write you logic here.
-    return;
+     let result = 0 ;
+     if (x > 0 && n > 0) {
+        result = x**n ; 
+    return result;
+     }
+    if (x > 0 && n == 0 ) {
+        return 1 ;
+    }
+    if (x == 0 && n > 0 ) {
+        return 1 ;
+    }
+    if (x ==0 && n == 0 ) {
+        return 1 ;
+    }
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -23,9 +47,19 @@ Write a function that take n as parameter and return the nth element in the Fibo
 Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n){
-    // Write you logic here.
-    return;
+    
+if (n == 0 ) {
+    return 0 ;
 }
+if(n== 1)
+    return 1;
+
+    if (n==0 || n == 1 ) {
+        return n ;
+    }
+    else return fibonacci(n-1)+fibonacci(n -2);
+}
+
 
 /* Optional 
 The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
